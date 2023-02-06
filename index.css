@@ -1,0 +1,169 @@
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    max-width: 430px;
+    height: 100vh;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F6F7FB 100%);
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* TYPOGRAPHY */
+h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color:#F8F8F8;
+}
+
+
+.dog-bio {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color:#B7B7B7;
+    margin-top: 0;
+}
+
+
+.end-scroll p {
+    margin-top: 0.82em;
+    font-size: 1.8rem;
+}
+
+
+/* LAYOUT */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF;
+    padding: 1em 0.75em;
+}
+
+.image-container{
+    position: relative;
+    margin: 0 auto;
+}
+
+.card {
+    width: 100%;
+    border-radius: 1.1em;
+}
+
+.dog-info {
+    position: absolute;
+    color: white;
+    bottom: 1.5em;
+    left: 1em;
+}
+
+
+.actions{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75em;
+}
+
+
+.end-scroll{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3em;
+ }
+ 
+
+/* IMAGES & LOGO */
+
+img {
+    max-width: 100%;
+}
+
+
+.dog-img{
+    border-radius: 0.5em;
+}
+
+
+.profile-icon,
+.chat-icon {
+    height: 2.125em;
+}
+
+
+.logo {
+   height: 2.5em;
+}
+
+
+.like-badge,
+.nope-badge{
+    position: absolute;
+    width: 200px;
+    height: 110px;
+    left: 14px;
+    top: 60.96px;
+    transform: rotate(-30deg);
+    display: none;
+}
+
+
+.heart-icon,
+.cross-icon{
+    height: 1.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* BUTTONS */
+button {
+    border: none;
+    border-radius: 50%;
+    padding: 1.5em;
+    box-shadow: 0px 10px 20px #E9E9EA;
+    background: #fff;
+}
+
+
+.accept-button:hover,
+.accept-button:focus{
+    background: #DBFFF4;
+    box-shadow: 0px 10px 20px #CCF1E6;
+}
+
+
+.reject-button:hover,
+.reject-button:focus{
+    background: #FFE7EF;
+    box-shadow: 0px 10px 20px #EDD9DF;
+}
+
+
+.start-btn {
+    font-family: inherit;
+    font-size: 0.96rem;
+    background: slateblue;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    border-radius: 10px;
+    color:#fff;
+    margin-top: 2em;
+    cursor: "pointer"
+}
+
+
+.start-btn:hover {
+    background: royalblue;
+}
