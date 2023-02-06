@@ -26,7 +26,7 @@ Users should be able to:
 ### Links
 
 - Solution Scrim: [Scrimba](https://scrimba.com/scrim/cErRmwsK)
-- Live Site URL: [Netlify](https://verdant-jalebi-a6995c.netlify.app)
+- Live Site URL: [Netlify](https://singular-lamington-fb379f.netlify.app)
 
 ## My process
 
