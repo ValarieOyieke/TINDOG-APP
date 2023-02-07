@@ -5,6 +5,8 @@ let newDog = getNewDog()
 const likeBadge  = document.getElementById('like-badge')
 const nopeBadge  = document.getElementById('nope-badge')
 const mainContent = document.getElementById('main-content')
+const acceptBtn = document.getElementById("accept-button")
+const rejectBtn = document.getElementById("reject-button")
 
 
 document.addEventListener('click', function(e){
@@ -12,6 +14,10 @@ document.addEventListener('click', function(e){
         document.location.reload()
     }
 })
+
+
+acceptBtn.addEventListener('click', accepted)
+rejectBtn.addEventListener('click', rejected)
 
 
 function accepted() {
@@ -43,6 +49,7 @@ function rejected() {
     }
 }
 
+
 function getNewDog () {
     const nextDog = dogsData.shift()
     return nextDog ? new Dog(nextDog) : {}
@@ -52,7 +59,6 @@ function getNewDog () {
 function render() {
     document.getElementById('card').innerHTML = newDog.getDogHtml()
 }
-
 render()
 
 
@@ -65,9 +71,5 @@ function endScroll () {
                 <p> No more swipes for today</p>
                 <button class="start-btn" id="start-btn">Start Over?</button>
             </div>`
-    },3000)  
+    },3000)
 }
-
-
-document.getElementById("accept-button").addEventListener('click', accepted)
-document.getElementById("reject-button").addEventListener('click', rejected)
